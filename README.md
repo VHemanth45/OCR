@@ -1,14 +1,12 @@
-# HumanAI
+# Historical Document OCR Pipeline
 ---
-## Project Name
-Optical Character Recognition of printed sources
+## Project Overview
+This personal project showcases an end-to-end Optical Character Recognition (OCR) pipeline tailored for historical printed sources. It demonstrates my skills in computer vision, deep learning, and natural language processing by tackling complex layouts, archaic spellings, and decorative document elements.
+
+![OCR Showcase](image%2036.png)
 
 ## Description
-Build a model based on convolutional-recurrent, transformer, or self-supervised
-architectures for optically recognizing the text of each data source. Your model should be
-able to detect the main text in each page, while disregarding other embellishments.
-Integrate an LLM or VLM model as a late-stage step to the OCR process (such as cleaning
-up the OCR output). Pick the most appropriate approach and discuss your strategy
+The goal of this project is to build a robust model based on convolutional-recurrent and transformer architectures for optically recognizing the text of historical data sources. The pipeline detects the main text in each page while disregarding other embellishments, and integrates an LLM as a late-stage step to clean up the OCR output.
 
 ## Project Summary
 I built The RenAIssance OCR Pipeline, an end-to-end optical character recognition system for historical printed documents containing complex layouts, decorative elements, and archaic spellings. The pipeline begins by isolating the main text regions using a fine-tuned YOLO-based object detection model, allowing the system to bypass headers, marginalia, and ornamental content that typically interfere with OCR performance. I then segmented the detected regions into line-level crops and aligned them with ground-truth transcripts to create a robust supervised training dataset.
